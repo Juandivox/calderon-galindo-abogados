@@ -1,0 +1,18 @@
+version: '3.8'
+
+services:
+  abogados-web:
+    build: .
+    container_name: abogados-web
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+    networks:
+      - abogados-network
+      - dokploy-network
+
+networks:
+  abogados-network:
+    driver: bridge
+  dokploy-network:
+    external: true

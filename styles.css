@@ -1,0 +1,301 @@
+/* Configuración de Tailwind */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Variables CSS para colores corporativos */
+:root {
+    --verde-institucional: #9EBC8A;
+    --negro-profundo: #1D1D1B;
+    --blanco-puro: #FFFFFF;
+}
+
+/* Estilos generales */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--negro-profundo);
+    background-color: var(--blanco-puro);
+}
+
+/* Ocultar scrollbar pero mantener funcionalidad */
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+/* Tipografías */
+.font-titulo {
+    font-family: 'STIX Two Text', serif;
+}
+
+.font-cuerpo {
+    font-family: 'Inter', system-ui, sans-serif;
+}
+
+/* Colores personalizados */
+.text-verde-institucional {
+    color: var(--verde-institucional);
+}
+
+.text-negro-profundo {
+    color: var(--negro-profundo);
+}
+
+.text-blanco-puro {
+    color: var(--blanco-puro);
+}
+
+.bg-verde-institucional {
+    background-color: var(--verde-institucional);
+}
+
+.bg-negro-profundo {
+    background-color: var(--negro-profundo);
+}
+
+.bg-blanco-puro {
+    background-color: var(--blanco-puro);
+}
+
+.border-verde-institucional {
+    border-color: var(--verde-institucional);
+}
+
+/* Logo con línea vertical verde */
+.logo-accent::before {
+    content: '';
+    display: inline-block;
+    width: 3px;
+    height: 1.5rem;
+    background-color: var(--verde-institucional);
+    margin-right: 0.5rem;
+    vertical-align: middle;
+}
+
+/* Banner hero sin imagen de fondo */
+.hero-bg {
+    background: linear-gradient(135deg, rgba(29, 29, 27, 0.95), rgba(158, 188, 138, 0.85));
+}
+
+/* Asegurar que el header esté siempre arriba */
+header {
+    z-index: 100 !important;
+}
+
+/* Logo en banner */
+.banner-logo {
+    max-width: 400px;
+    width: 85%;
+    height: auto;
+    margin: 0 auto 1rem auto;
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.3));
+    display: block;
+}
+
+@media (max-width: 768px) {
+    .banner-logo {
+        max-width: 280px;
+        margin-bottom: 0.75rem;
+    }
+}
+
+/* Animaciones */
+.fade-in {
+    animation: fadeIn 0.8s ease-in;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Efectos hover en tarjetas */
+.card-hover {
+    transition: all 0.3s ease;
+}
+
+.card-hover:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Botones */
+button, .btn {
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+button:hover, .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 8px 16px rgba(158, 188, 138, 0.3);
+}
+
+/* Inputs y formularios */
+input:focus, textarea:focus {
+    outline: none;
+    border-color: var(--verde-institucional);
+    ring: 2px;
+    ring-color: var(--verde-institucional);
+}
+
+/* Separadores */
+.separator {
+    height: 1px;
+    background: linear-gradient(to right, transparent, #e5e7eb, transparent);
+    margin: 2rem 0;
+}
+
+/* Imágenes con efecto grayscale */
+.grayscale {
+    filter: grayscale(100%);
+}
+
+.grayscale:hover {
+    filter: grayscale(0%);
+}
+
+/* Sombras personalizadas */
+.shadow-verde {
+    box-shadow: 0 4px 14px rgba(158, 188, 138, 0.25);
+}
+
+.shadow-verde:hover {
+    box-shadow: 0 8px 24px rgba(158, 188, 138, 0.35);
+}
+
+/* Espaciado consistente */
+.section-padding {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+@media (min-width: 1024px) {
+    .section-padding {
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+}
+
+/* Estilos para el modal */
+#message-box {
+    backdrop-filter: blur(4px);
+}
+
+/* Animación de entrada para el modal */
+#message-box > div {
+    animation: modalSlideIn 0.3s ease-out;
+}
+
+@keyframes modalSlideIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9) translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+/* Estilos para enlaces */
+a {
+    transition: all 0.3s ease;
+}
+
+/* Navegación sticky */
+header {
+    transition: all 0.3s ease;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .banner-logo {
+        max-width: 300px;
+    }
+    
+    h1 {
+        font-size: 2rem;
+    }
+    
+    h2 {
+        font-size: 1.75rem;
+    }
+}
+
+/* Mejoras de accesibilidad */
+:focus-visible {
+    outline: 2px solid var(--verde-institucional);
+    outline-offset: 2px;
+}
+
+/* Animación suave para scroll */
+@media (prefers-reduced-motion: reduce) {
+    * {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    bottom: 24px;
+    right: 24px;
+    background-color: #25D366;
+    color: white;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+    transition: all 0.3s ease;
+    z-index: 1000;
+    text-decoration: none;
+}
+
+.whatsapp-float:hover {
+    background-color: #20BA5A;
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4);
+}
+
+.whatsapp-float:active {
+    transform: scale(0.95);
+}
+
+@media (max-width: 768px) {
+    .whatsapp-float {
+        bottom: 20px;
+        right: 20px;
+        width: 56px;
+        height: 56px;
+    }
+
+    .whatsapp-float svg {
+        width: 28px;
+        height: 28px;
+    }
+}
