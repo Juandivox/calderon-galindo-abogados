@@ -74,37 +74,6 @@ export const teamMembers = [
     showOnTeamPage: true,
   },
   {
-    slug: 'julian-romero',
-    name: 'Julián David Romero Espinoza',
-    position: 'Abogado',
-    email: 'jromero@calderongalindo.com.co',
-    linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP80066.jpg',
-    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8006.jpg',
-    summary:
-      'Abogado de la Universidad Militar Nueva Granada. Especialista en derecho comercial y societario.',
-    detailBlocks: [
-      'Abogado de la Universidad Militar Nueva Granada. Especialista en derecho comercial y societario.',
-    ],
-    showOnHome: true,
-    showOnTeamPage: true,
-  },
-  {
-    slug: 'leidy-celi',
-    name: 'Leidy Yasmín Celi Celi',
-    position: 'Abogada',
-    email: 'lceli@calderongalindo.com.co',
-    linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/LEIDY.png',
-    detailPhoto: null, // sin foto de detalle — se muestra iniciales
-    detailInitials: 'LC',
-    summary:
-      'Abogada de la Universidad Católica de Colombia. Especialista en derecho laboral y seguridad social.',
-    detailBlocks: ['Abogada de la Universidad Católica de Colombia.'],
-    showOnHome: true,
-    showOnTeamPage: true,
-  },
-  {
     slug: 'john-sossa',
     name: 'John Fredy Sossa Buitrago',
     position: 'Abogado',

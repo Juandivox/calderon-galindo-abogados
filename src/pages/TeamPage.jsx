@@ -8,8 +8,17 @@ function MemberCard({ member }) {
     <div className="mb-16 bg-gray-50 rounded-xl shadow-xl p-8 lg:p-12">
       <div className="grid lg:grid-cols-3 gap-8 items-start">
         {/* Foto */}
-        <div className="lg:col-span-1">
-          {member.detailPhoto ? (
+        <div className="lg:col-span-1 flex justify-center items-start">
+          {member.detailPhoto && member.circularPhoto ? (
+            <div className="bg-white rounded-full shadow-xl p-2 inline-block">
+              <img
+                src={member.detailPhoto}
+                alt={member.name}
+                className="w-64 h-64 rounded-full object-cover"
+                style={{ objectPosition: 'center 10%' }}
+              />
+            </div>
+          ) : member.detailPhoto ? (
             <img
               src={member.detailPhoto}
               alt={member.name}
@@ -18,7 +27,7 @@ function MemberCard({ member }) {
           ) : (
             <div className="w-full aspect-[3/4] bg-verde-institucional rounded-xl shadow-lg flex items-center justify-center">
               <span className="text-blanco-puro font-titulo text-6xl font-bold">
-                {member.detailInitials || member.name.split(' ').map((n) => n[0]).join('').slice(0, 2)}
+                {member.name.split(' ').map((n) => n[0]).join('').slice(0, 2)}
               </span>
             </div>
           )}
