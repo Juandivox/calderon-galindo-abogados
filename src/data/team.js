@@ -34,7 +34,7 @@ export const teamMembers = [
     summary:
       'Abogado de la Universidad Libre con especialización en Derecho Administrativo Laboral. Cuenta con más de 5 años de experiencia.',
     detailBlocks: [
-      'Abogado de la Universidad Libre con especialización en Derecho Administrativo Laboral. Cuenta con más de 5 años de experiencia en derecho laboral y seguridad social, en conciliación y negociación de obligaciones, así como en el litigio en materia laboral, civil, comercial y societaria. Su práctica se ha enfocado en la defensa de los derechos de trabajadores y empleadores, la estructuración de estrategias jurídicas en procesos de negociación y la representación efectiva en escenarios judiciales y extrajudiciales.',
+      'Abogado de la Universidad Libre con especialización en Derecho Administrativo Laboral y especialista en Derecho Penal Integral. Cuenta con más de 5 años de experiencia en derecho laboral y seguridad social, en conciliación y negociación de obligaciones, así como en el litigio en materia laboral, civil, comercial, societaria y penal. Su práctica se ha enfocado en la defensa de los derechos de trabajadores y empleadores, la estructuración de estrategias jurídicas en procesos de negociación y la representación efectiva en escenarios judiciales y extrajudiciales.',
       'Se destaca por su habilidad para generar acuerdos que favorecen la solución pacífica de los conflictos, su capacidad de análisis jurídico integral y su compromiso con la protección de los intereses de sus clientes. Gracias a su versatilidad en distintas ramas del derecho, ofrece un acompañamiento sólido, preventivo y estratégico que garantiza confianza y resultados efectivos.',
     ],
     showOnHome: true,

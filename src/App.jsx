@@ -10,7 +10,6 @@ import WhatsAppFloat from './components/layout/WhatsAppFloat'
 
 import HomePage from './pages/HomePage'
 import TeamPage from './pages/TeamPage'
-import LegalTechPage from './pages/LegalTechPage'
 
 /** Dispara pageviews en analytics cuando cambia la ruta */
 function AnalyticsPageView() {
@@ -63,9 +62,6 @@ export default function App() {
             <Route path="/" element={<HomePage />} />
             <Route path="/equipo" element={<TeamPage />} />
           </Route>
-
-          {/* LegalTech: layout propio */}
-          <Route path="/legal-tech" element={<LegalTechPage />} />
         </Routes>
       </ModalProvider>
     </BrowserRouter>
