@@ -1,4 +1,6 @@
 import { Target, Eye, Award, Shield, Handshake, Lightbulb, Lock, Scale } from 'lucide-react'
+import SectionHeader from '../ui/SectionHeader'
+import Reveal from '../ui/Reveal'
 
 const valores = [
   { Icon: Award, name: 'Excelencia', desc: 'Nos esforzamos por superar las expectativas en cada asunto que se nos confía.' },
@@ -13,29 +15,30 @@ export default function AboutSection() {
   return (
     <section id="about" className="py-16 lg:py-24 bg-blanco-puro">
       <div className="container mx-auto px-6 lg:px-12">
-        <h2 className="font-titulo text-4xl lg:text-5xl font-bold mb-16 text-center text-verde-institucional">
-          Sobre Nosotros
-        </h2>
+        <SectionHeader
+          eyebrow="Sobre nosotros"
+          title="Un legado de justicia y confianza"
+          lead="De dos jóvenes apasionados por el derecho a una firma con presencia nacional."
+          align="center"
+        />
+        <div className="mt-16" />
 
         {/* Imagen panorámica */}
-        <div
-          className="mb-12 transform hover:scale-[1.005] transition duration-500 rounded-xl overflow-hidden shadow-xl"
-          style={{ height: 300 }}
-        >
+        <Reveal className="mb-12 overflow-hidden rounded-2xl shadow-xl" >
           <img
-            src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070"
-            alt="Edificio institucional"
-            className="w-full h-full object-cover rounded-xl grayscale hover:grayscale-0 transition duration-500"
+            src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.jpg"
+            alt="Oficina de Calderón Galindo Abogados"
+            className="h-[300px] w-full object-cover grayscale transition duration-500 hover:grayscale-0"
             style={{ objectPosition: 'center 30%' }}
           />
-        </div>
+        </Reveal>
 
         {/* Historia */}
         <div className="mb-16">
           <h3 className="font-titulo text-3xl font-semibold mb-6 text-negro-profundo">
             <span className="text-verde-institucional">Nuestra Historia</span>
           </h3>
-          <div className="space-y-4 font-cuerpo text-gray-700 leading-relaxed text-lg">
+          <div className="space-y-4 font-cuerpo text-piedra leading-relaxed text-lg">
             <p>
               En el corazón de Bogotá, dos jóvenes apasionados por el derecho, Calderón y Galindo unieron sus sueños y
               aspiraciones para fundar una firma jurídica consultora. Desde el inicio, su visión fue clara: crear un
@@ -62,24 +65,24 @@ export default function AboutSection() {
 
         {/* Misión y Visión */}
         <div className="grid md:grid-cols-2 gap-8 mb-12">
-          <div className="p-8 bg-gray-50 rounded-xl shadow-lg border-l-4 border-verde-institucional">
+          <div className="p-8 bg-marfil rounded-2xl shadow-lg border-l-4 border-verde-institucional">
             <div className="flex items-center mb-4">
               <Target className="w-8 h-8 text-verde-institucional mr-3" />
               <h4 className="font-titulo text-2xl font-semibold text-negro-profundo">Misión</h4>
             </div>
-            <p className="font-cuerpo text-gray-700 leading-relaxed">
+            <p className="font-cuerpo text-piedra leading-relaxed">
               Ofrecer asesoría y representación legal de la más alta calidad, generando soluciones jurídicas prácticas e
               innovadoras que permitan solucionar aquellos conflictos o dificultades jurídicas de nuestros clientes.
               Actuamos con rigor, ética y un profundo entendimiento de sus objetivos para convertirnos en un pilar
               fundamental de su éxito.
             </p>
           </div>
-          <div className="p-8 bg-gray-50 rounded-xl shadow-lg border-l-4 border-verde-institucional">
+          <div className="p-8 bg-marfil rounded-2xl shadow-lg border-l-4 border-verde-institucional">
             <div className="flex items-center mb-4">
               <Eye className="w-8 h-8 text-verde-institucional mr-3" />
               <h4 className="font-titulo text-2xl font-semibold text-negro-profundo">Visión</h4>
             </div>
-            <p className="font-cuerpo text-gray-700 leading-relaxed">
+            <p className="font-cuerpo text-piedra leading-relaxed">
               Consolidarnos como una de las firmas líderes en Colombia, siendo el referente indiscutible en derecho
               privado, laboral y seguridad social, comercial y societario; así como una empresa vanguardista en el uso de
               la tecnología en cada una de las etapas de atención y servicio de nuestros clientes.
@@ -88,7 +91,7 @@ export default function AboutSection() {
         </div>
 
         {/* Valores */}
-        <div className="p-8 bg-gray-50 rounded-xl shadow-lg">
+        <div className="p-8 bg-marfil rounded-2xl shadow-lg">
           <h4 className="font-titulo text-2xl font-semibold mb-6 text-center text-negro-profundo">
             <span className="text-verde-institucional">Nuestros Valores</span>
           </h4>
@@ -97,7 +100,7 @@ export default function AboutSection() {
               <div key={name} className="flex flex-col items-center text-center p-4">
                 <Icon className="w-10 h-10 text-verde-institucional mb-3" />
                 <h5 className="font-titulo text-lg font-semibold mb-2 text-negro-profundo">{name}</h5>
-                <p className="font-cuerpo text-sm text-gray-700">{desc}</p>
+                <p className="font-cuerpo text-sm text-piedra">{desc}</p>
               </div>
             ))}
           </div>
