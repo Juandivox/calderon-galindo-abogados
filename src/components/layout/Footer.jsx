@@ -13,7 +13,7 @@ const areas = ['Insolvencia', 'Derecho Civil', 'Laboral y Seguridad Social', 'Tr
 export default function Footer() {
   return (
     <footer className="bg-negro-profundo text-blanco-puro">
-      <div className="container py-16">
+      <div className="container mx-auto px-6 lg:px-12 py-16">
         <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-4">
           <div>
             <img src="/Image/Abogados/Logo/Logo_blanco1.png" alt="Calderón Galindo Abogados" className="h-12 w-auto" />

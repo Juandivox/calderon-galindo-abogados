@@ -17,7 +17,7 @@ function Stat({ value, suffix, label }) {
 export default function StatsSection() {
   return (
     <section className="bg-negro-profundo py-16 lg:py-20">
-      <div className="container">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="grid grid-cols-2 gap-10 lg:grid-cols-4">
           {stats.map((s) => (
             <Stat key={s.label} {...s} />

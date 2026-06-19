@@ -9,7 +9,7 @@ export default function HeroSection() {
         className="absolute inset-0 -z-10"
         style={{ background: 'linear-gradient(100deg, rgba(29,29,27,0.92) 0%, rgba(29,29,27,0.72) 45%, rgba(36,48,24,0.5) 100%)' }}
       />
-      <div className="container">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="max-w-3xl text-blanco-puro">
           <span className="font-cuerpo inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.25em] text-verde-institucional">
             <span className="h-px w-8 bg-verde-institucional" /> Firma jurídica · Bogotá, Colombia

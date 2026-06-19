@@ -11,7 +11,7 @@ const pasos = [
 export default function ProcesoSection() {
   return (
     <section id="proceso" className="bg-verde-bosque py-20 text-blanco-puro lg:py-28">
-      <div className="container">
+      <div className="container mx-auto px-6 lg:px-12">
         <SectionHeader eyebrow="Cómo trabajamos" title="Un proceso claro, de principio a fin" align="center" tone="dark" />
         <div className="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
           {pasos.map((p, i) => (

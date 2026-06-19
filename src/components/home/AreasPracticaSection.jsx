@@ -37,7 +37,7 @@ function AreaCard({ Icon, title, teaser, paragraphs }) {
 export default function AreasPracticaSection() {
   return (
     <section id="areas-practica" className="bg-blanco-puro py-20 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto px-6 lg:px-12">
         <SectionHeader
           eyebrow="Áreas de práctica"
           title="Acompañamiento jurídico integral"

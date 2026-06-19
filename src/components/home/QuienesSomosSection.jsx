@@ -4,7 +4,7 @@ import Reveal from '../ui/Reveal'
 export default function QuienesSomosSection() {
   return (
     <section id="quienes-somos" className="bg-marfil py-20 lg:py-28">
-      <div className="container">
+      <div className="container mx-auto px-6 lg:px-12">
         <div className="grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal className="space-y-6">
             <SectionHeader

@@ -9,7 +9,7 @@ export default function TestimonioSection() {
 
   return (
     <section id="testimonio" className="bg-verde-institucional py-16 lg:py-24">
-      <div className="container max-w-4xl text-center">
+      <div className="container mx-auto px-6 lg:px-12 max-w-4xl text-center">
         <Quote className="mx-auto mb-8 h-12 w-12 text-negro-profundo/60" />
 
         <div className="overflow-hidden">
