@@ -24,10 +24,11 @@ export default function QuienesSomosSection() {
 
           <Reveal delay={120} className="overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.jpg"
-              alt="Equipo de Calderón Galindo Abogados"
+              src="/Image/Abogados/Fotos/NICO 7 JUN CORP8054.jpg"
+              alt="Abogado de Calderón Galindo Abogados"
               loading="lazy"
-              className="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0"
+              className="aspect-[4/5] w-full object-cover grayscale transition duration-500 hover:grayscale-0"
+              style={{ objectPosition: 'center 12%' }}
             />
           </Reveal>
         </div>

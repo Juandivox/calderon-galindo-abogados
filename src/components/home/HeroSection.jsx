@@ -1,10 +1,16 @@
-const HERO_IMG = '/Image/Abogados/Fotos/NICO 7 JUN CORP8054.jpg' // CONFIRMAR: usar la mejor foto apaisada de oficina/equipo
+const HERO_IMG = '/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.jpg' // foto del equipo (apaisada)
 const WPP = 'https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta'
 
 export default function HeroSection() {
   return (
     <section id="home" className="relative isolate flex min-h-[88vh] items-center overflow-hidden">
-      <img src={HERO_IMG} alt="" aria-hidden="true" className="absolute inset-0 -z-10 h-full w-full object-cover" />
+      <img
+        src={HERO_IMG}
+        alt=""
+        aria-hidden="true"
+        className="absolute inset-0 -z-10 h-full w-full object-cover"
+        style={{ objectPosition: 'center top' }}
+      />
       <div
         className="absolute inset-0 -z-10"
         style={{ background: 'linear-gradient(100deg, rgba(29,29,27,0.92) 0%, rgba(29,29,27,0.72) 45%, rgba(36,48,24,0.5) 100%)' }}
