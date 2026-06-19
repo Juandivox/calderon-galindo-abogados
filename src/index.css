@@ -100,31 +100,55 @@ body { -ms-overflow-style: none; scrollbar-width: none; }
 }
 
 @layer components {
-  /* Botones */
+  /* Botones — CSS plano para no depender de @apply de colores del theme */
+  .btn-primario,
+  .btn-secundario,
+  .btn-secundario-claro {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    border-radius: 9999px;
+    padding: 1rem 2rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
   .btn-primario {
-    @apply inline-flex items-center justify-center gap-2 rounded-full bg-verde-institucional px-8 py-4
-           font-cuerpo font-semibold text-negro-profundo shadow-lg transition duration-300;
+    background-color: #9EBC8A; /* verde-institucional */
+    color: #1D1D1B; /* negro-profundo */
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   }
   .btn-primario:hover {
-    @apply bg-verde-medio shadow-xl;
+    background-color: #7FA268; /* verde-medio */
     transform: translateY(-2px);
+    box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 8px 10px -6px rgba(0, 0, 0, 0.1);
   }
   .btn-secundario {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-verde-profundo/30 px-8 py-4
-           font-cuerpo font-semibold text-verde-profundo transition duration-300;
+    border: 1px solid rgba(70, 96, 47, 0.3); /* verde-profundo/30 */
+    color: #46602F; /* verde-profundo */
   }
   .btn-secundario:hover {
-    @apply bg-verde-claro;
+    background-color: #E7EEE0; /* verde-claro */
   }
   .btn-secundario-claro {
-    @apply inline-flex items-center justify-center gap-2 rounded-full border border-blanco-puro/40 px-8 py-4
-           font-cuerpo font-semibold text-blanco-puro transition duration-300;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: #FFFFFF;
   }
   .btn-secundario-claro:hover {
-    @apply bg-blanco-puro/10;
+    background-color: rgba(255, 255, 255, 0.1);
   }
   /* Eyebrow / kicker editorial */
   .eyebrow {
-    @apply font-cuerpo inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-verde-profundo;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-family: 'Inter', system-ui, sans-serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    color: #46602F; /* verde-profundo */
   }
 }
