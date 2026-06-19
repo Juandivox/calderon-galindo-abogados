@@ -98,7 +98,7 @@ export default function Header() {
               href="https://wa.me/573239326636"
               target="_blank"
               rel="noopener noreferrer"
-              className="font-cuerpo px-6 py-2.5 bg-verde-institucional text-blanco-puro rounded-lg font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300"
+              className="font-cuerpo px-6 py-2.5 bg-verde-institucional text-negro-profundo rounded-lg font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300"
             >
               Contacto
             </a>
@@ -136,7 +136,7 @@ export default function Header() {
                 href="https://wa.me/573239326636"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="font-cuerpo py-2.5 px-4 bg-verde-institucional text-blanco-puro text-center rounded-lg hover:bg-opacity-90 transition duration-300"
+                className="font-cuerpo py-2.5 px-4 bg-verde-institucional text-negro-profundo text-center rounded-lg hover:bg-opacity-90 transition duration-300"
               >
                 Contacto
               </a>

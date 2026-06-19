@@ -69,7 +69,7 @@ export default function TeamPage() {
     <main>
       {/* Hero */}
       <section
-        className="py-12 lg:py-14"
+        className="pt-28 pb-12 lg:pt-36 lg:pb-16"
         style={{ background: 'linear-gradient(135deg, rgba(29,29,27,0.95), rgba(158,188,138,0.85))' }}
       >
         <div className="container mx-auto px-6 lg:px-12 text-center">
