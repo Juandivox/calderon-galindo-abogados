@@ -26,6 +26,7 @@ export default function QuienesSomosSection() {
             <img
               src="/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.jpg"
               alt="Equipo de Calderón Galindo Abogados"
+              loading="lazy"
               className="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0"
             />
           </Reveal>

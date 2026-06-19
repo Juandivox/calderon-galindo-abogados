@@ -28,6 +28,7 @@ export default function AboutSection() {
           <img
             src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.jpg"
             alt="Oficina de Calderón Galindo Abogados"
+            loading="lazy"
             className="h-[300px] w-full object-cover grayscale transition duration-500 hover:grayscale-0"
             style={{ objectPosition: 'center 30%' }}
           />

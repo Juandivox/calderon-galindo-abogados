@@ -39,6 +39,7 @@ export default function TeamSection() {
                       <img
                         src={member.shortPhoto}
                         alt={member.name}
+                        loading="lazy"
                         className="w-40 h-40 sm:w-48 sm:h-48 lg:w-56 lg:h-56 rounded-full object-cover border-4 border-verde-institucional/50"
                         style={{ objectPosition: 'center 20%' }}
                       />
