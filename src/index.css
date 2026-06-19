@@ -98,3 +98,24 @@ body { -ms-overflow-style: none; scrollbar-width: none; }
 @media (prefers-reduced-motion: reduce) {
   * { animation-duration: 0.01ms !important; transition-duration: 0.01ms !important; }
 }
+
+@layer components {
+  /* Botones */
+  .btn-primario {
+    @apply inline-flex items-center justify-center gap-2 rounded-full bg-verde-institucional px-8 py-4
+           font-cuerpo font-semibold text-negro-profundo shadow-lg transition duration-300
+           hover:bg-verde-medio hover:-translate-y-0.5 hover:shadow-xl;
+  }
+  .btn-secundario {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-verde-profundo/30 px-8 py-4
+           font-cuerpo font-semibold text-verde-profundo transition duration-300 hover:bg-verde-claro;
+  }
+  .btn-secundario-claro {
+    @apply inline-flex items-center justify-center gap-2 rounded-full border border-blanco-puro/40 px-8 py-4
+           font-cuerpo font-semibold text-blanco-puro transition duration-300 hover:bg-blanco-puro/10;
+  }
+  /* Eyebrow / kicker editorial */
+  .eyebrow {
+    @apply font-cuerpo inline-flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-verde-profundo;
+  }
+}
