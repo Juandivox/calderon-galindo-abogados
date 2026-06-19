@@ -1,36 +1,7 @@
-import { useState } from 'react'
 import { MapPin, Phone, Mail, Clock } from 'lucide-react'
-import { useModal } from '../../context/ModalContext'
 import SectionHeader from '../ui/SectionHeader'
 
 export default function ContactSection() {
-  const { showModal } = useModal()
-  const [form, setForm] = useState({ name: '', email: '', message: '' })
-
-  const handleChange = (e) => setForm((f) => ({ ...f, [e.target.name]: e.target.value }))
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    const { name, email, message } = form
-
-    if (!name || !email || !message) {
-      showModal('Campos Incompletos', 'Por favor complete todos los campos del formulario.')
-      return
-    }
-
-    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-    if (!emailRegex.test(email)) {
-      showModal('Email Inválido', 'Por favor ingrese un correo electrónico válido.')
-      return
-    }
-
-    showModal(
-      '¡Mensaje Enviado con Éxito!',
-      `Gracias ${name} por contactar a Calderón Galindo Abogados. Hemos recibido su consulta y nos pondremos en contacto con usted a la brevedad posible.`,
-    )
-    setForm({ name: '', email: '', message: '' })
-  }
-
   return (
     <section id="contact" className="py-16 lg:py-24 bg-blanco-puro">
       <div className="container mx-auto px-6 lg:px-12">
@@ -78,61 +49,6 @@ export default function ContactSection() {
                   <span>Lunes a Viernes de 7:00 a.m. a 6:00 p.m.</span>
                 </li>
               </ul>
-            </div>
-
-            {/* Formulario */}
-            <div className="p-8 bg-blanco-puro rounded-2xl shadow-2xl border border-gray-100">
-              <h3 className="font-titulo text-2xl font-semibold mb-6 text-negro-profundo">Formulario de Consulta</h3>
-              <form onSubmit={handleSubmit} className="space-y-5">
-                <div>
-                  <label htmlFor="name" className="block text-sm font-medium text-piedra mb-1">
-                    Nombre Completo
-                  </label>
-                  <input
-                    type="text"
-                    id="name"
-                    name="name"
-                    required
-                    value={form.name}
-                    onChange={handleChange}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-verde-institucional outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="email" className="block text-sm font-medium text-piedra mb-1">
-                    Correo Electrónico
-                  </label>
-                  <input
-                    type="email"
-                    id="email"
-                    name="email"
-                    required
-                    value={form.email}
-                    onChange={handleChange}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-verde-institucional outline-none"
-                  />
-                </div>
-                <div>
-                  <label htmlFor="message" className="block text-sm font-medium text-piedra mb-1">
-                    Mensaje
-                  </label>
-                  <textarea
-                    id="message"
-                    name="message"
-                    rows={4}
-                    required
-                    value={form.message}
-                    onChange={handleChange}
-                    className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-verde-institucional focus:border-verde-institucional outline-none"
-                  />
-                </div>
-                <button
-                  type="submit"
-                  className="btn-primario w-full"
-                >
-                  Enviar Mensaje
-                </button>
-              </form>
             </div>
           </div>
 
