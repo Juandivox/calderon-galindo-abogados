@@ -13,6 +13,13 @@ html {
   scroll-behavior: smooth;
 }
 
+/* Evita el desplazamiento horizontal (la "línea blanca" al deslizar en móvil) */
+html, body {
+  overflow-x: hidden;
+  width: 100%;
+  max-width: 100%;
+}
+
 /* Ocultar scrollbar pero mantener funcionalidad */
 ::-webkit-scrollbar { display: none; }
 body { -ms-overflow-style: none; scrollbar-width: none; }
