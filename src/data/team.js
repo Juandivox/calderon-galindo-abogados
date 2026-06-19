@@ -87,6 +87,6 @@ export const teamMembers = [
       'Abogado de la Universidad Libre con especialización en Derecho Penal de la misma institución. Experto en litigio penal, defensa estratégica y asesoría en procesos penales complejos.',
     ],
     showOnHome: true,
-    showOnTeamPage: false, // no estaba en equipo.html original
+    showOnTeamPage: true,
   },
 ]
