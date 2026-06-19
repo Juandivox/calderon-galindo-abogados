@@ -2,6 +2,7 @@ import { Link } from 'react-router-dom'
 import { ChevronLeft, ChevronRight, Mail, Linkedin } from 'lucide-react'
 import { teamMembers } from '../../data/team'
 import { useCarousel } from '../../hooks/useCarousel'
+import SectionHeader from '../ui/SectionHeader'
 
 const homeMembers = teamMembers.filter((m) => m.showOnHome)
 const CARDS_PER_VIEW = 3
@@ -15,11 +16,14 @@ export default function TeamSection() {
   const offset = -(current * 100)
 
   return (
-    <section id="team" className="py-16 lg:py-24 bg-gray-100">
+    <section id="team" className="py-16 lg:py-24 bg-marfil">
       <div className="container mx-auto px-6 lg:px-12">
-        <h2 className="font-titulo text-4xl lg:text-5xl font-bold mb-16 text-center text-verde-institucional">
-          Nuestro Equipo
-        </h2>
+        <SectionHeader
+          eyebrow="Nuestro equipo"
+          title="Profesionales comprometidos con su caso"
+          align="center"
+        />
+        <div className="mt-16" />
 
         <div className="relative">
           {/* Carrusel */}
@@ -30,7 +34,7 @@ export default function TeamSection() {
             >
               {homeMembers.map((member) => (
                 <div key={member.slug} className="flex-shrink-0 w-full md:w-1/2 lg:w-1/3 px-4">
-                  <div className="bg-blanco-puro rounded-xl p-6 shadow-xl border-2 border-verde-institucional/30 hover:shadow-2xl transition duration-300 card-hover flex flex-col h-full">
+                  <div className="bg-blanco-puro rounded-2xl p-6 shadow-xl ring-1 ring-niebla border-0 hover:shadow-2xl transition duration-300 card-hover flex flex-col h-full">
                     <div className="flex justify-center mb-4">
                       <img
                         src={member.shortPhoto}
@@ -42,7 +46,7 @@ export default function TeamSection() {
                     <h3 className="font-titulo text-2xl font-semibold text-center mb-1 text-negro-profundo">
                       {member.name}
                     </h3>
-                    <p className="font-cuerpo text-verde-institucional text-center mb-3 text-lg font-medium">
+                    <p className="font-cuerpo text-verde-profundo text-center mb-3 text-lg font-medium">
                       {member.position}
                     </p>
                     <p className="font-cuerpo text-gray-700 text-sm mb-4 leading-relaxed flex-grow">
@@ -51,7 +55,7 @@ export default function TeamSection() {
                     {member.showOnTeamPage && (
                       <Link
                         to="/equipo"
-                        className="block w-full text-center px-4 py-2 mb-4 bg-verde-institucional text-blanco-puro rounded-lg font-medium hover:bg-opacity-90 transition duration-300"
+                        className="btn-secundario mt-auto w-full"
                       >
                         Conocer más
                       </Link>
