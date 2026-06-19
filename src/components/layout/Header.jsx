@@ -56,16 +56,18 @@ export default function Header() {
 
   return (
     <header
-      className={`sticky top-0 z-50 bg-blanco-puro transition-shadow duration-300 ${scrolled ? 'shadow-xl' : 'shadow-md'}`}
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? 'bg-blanco-puro shadow-md' : 'bg-transparent'
+      }`}
     >
       <div className="container mx-auto px-6 lg:px-12">
         <div className="flex justify-between items-center py-5">
           {/* Logo */}
           <a href="/#home" onClick={(e) => handleNavClick(e, '/#home')} className="flex items-center group">
             <img
-              src="/Image/Abogados/Logo/Logo_negro.png"
+              src={scrolled ? '/Image/Abogados/Logo/Logo_negro.png' : '/Image/Abogados/Logo/Logo_blanco1.png'}
               alt="Calderón Galindo Abogados"
-              className="h-10 lg:h-12 w-auto transition duration-300 group-hover:opacity-80"
+              className="h-10 w-auto transition duration-300 group-hover:opacity-80 lg:h-12"
             />
           </a>
 
@@ -76,10 +78,12 @@ export default function Header() {
                 key={to}
                 href={to}
                 onClick={(e) => handleNavClick(e, to)}
-                className={`font-cuerpo transition duration-300 font-medium relative group ${
+                className={`font-cuerpo relative font-medium transition duration-300 group ${
                   isActive(to)
-                    ? 'text-verde-institucional'
-                    : 'text-negro-profundo hover:text-verde-institucional'
+                    ? 'text-verde-profundo'
+                    : scrolled
+                      ? 'text-negro-profundo hover:text-verde-profundo'
+                      : 'text-blanco-puro hover:text-verde-institucional'
                 }`}
               >
                 {label}
@@ -102,7 +106,7 @@ export default function Header() {
 
           {/* Mobile toggle */}
           <button
-            className="lg:hidden text-negro-profundo p-2"
+            className={`lg:hidden p-2 ${scrolled ? 'text-negro-profundo' : 'text-blanco-puro'}`}
             onClick={() => setMenuOpen((v) => !v)}
             aria-label="Abrir menú"
           >
