@@ -3,7 +3,7 @@ const WPP = 'https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20agenda
 
 export default function HeroSection() {
   return (
-    <section id="home" className="relative isolate flex min-h-[88vh] items-center overflow-hidden">
+    <section id="home" className="relative isolate flex min-h-screen items-center overflow-hidden">
       <img
         src={HERO_IMG}
         alt=""
