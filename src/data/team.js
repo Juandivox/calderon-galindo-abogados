@@ -12,8 +12,8 @@ export const teamMembers = [
     position: 'Socio Fundador',
     email: 'ncalderon@calderongalindo.com.co',
     linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8038.jpg',
-    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8041.jpg',
+    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8038.webp',
+    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8041.webp',
     summary:
       'Abogado de la Universidad Libre con especialización en Derecho Tributario de la Universidad Externado de Colombia. Experto en protección patrimonial, quiebra y fiscalidad internacional. Cuenta con más de 5 años de experiencia.',
     detailBlocks: [
@@ -29,8 +29,8 @@ export const teamMembers = [
     position: 'Socio Fundador',
     email: 'jgalindo@calderongalindo.com.co',
     linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8267.jpg',
-    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8080.jpg',
+    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8267.webp',
+    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8080.webp',
     summary:
       'Abogado de la Universidad Libre con especialización en Derecho Administrativo Laboral. Cuenta con más de 5 años de experiencia.',
     detailBlocks: [
@@ -46,8 +46,8 @@ export const teamMembers = [
     position: 'Abogado',
     email: 'cblandon@calderongalindo.com.co',
     linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP80122.jpg',
-    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8283.jpg',
+    shortPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP80122.webp',
+    detailPhoto: '/Image/Abogados/Fotos/NICO 7 JUN CORP8283.webp',
     summary:
       'Abogado de la Universidad Libre. Áreas de Práctica: Litigios Civiles y Comerciales, Arbitraje, Responsabilidad Civil.',
     detailBlocks: [
@@ -63,8 +63,8 @@ export const teamMembers = [
     position: 'Abogado',
     email: 'ipardo@calderongalindo.com.co',
     linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/IVAN.jpeg',
-    detailPhoto: '/Image/Abogados/Fotos/IVAN.jpeg',
+    shortPhoto: '/Image/Abogados/Fotos/IVAN.webp',
+    detailPhoto: '/Image/Abogados/Fotos/IVAN.webp',
     summary:
       'Abogado de la Universidad Santo Tomás, es especialista en Derecho Financiero y Criptoactivos de la Universidad del Rosario.',
     detailBlocks: [
@@ -79,8 +79,8 @@ export const teamMembers = [
     position: 'Abogado',
     email: 'jsossa@calderongalindo.com.co',
     linkedin: '#',
-    shortPhoto: '/Image/Abogados/Fotos/JOHN.jpeg',
-    detailPhoto: '/Image/Abogados/Fotos/JOHN.jpeg',
+    shortPhoto: '/Image/Abogados/Fotos/JOHN.webp',
+    detailPhoto: '/Image/Abogados/Fotos/JOHN.webp',
     summary:
       'Abogado de la Universidad Libre con especialización en Derecho Penal de la misma institución. Experto en litigio penal, defensa estratégica y asesoría en procesos penales complejos.',
     detailBlocks: [

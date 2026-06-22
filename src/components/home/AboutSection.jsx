@@ -26,7 +26,7 @@ export default function AboutSection() {
         <div className="mt-16 mb-16 grid items-start gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:gap-16">
           <Reveal className="overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.jpg"
+              src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.webp"
               alt="Profesional de Calderón Galindo Abogados"
               loading="lazy"
               className="aspect-[4/5] w-full object-cover grayscale transition duration-500 hover:grayscale-0"

@@ -603,7 +603,7 @@ git commit -m "feat(data): stats, testimonios y faqs"
 - [ ] **Step 1: Reemplazar todo el archivo**
 
 ```jsx
-const HERO_IMG = '/Image/Abogados/Fotos/NICO 7 JUN CORP8054.jpg' // CONFIRMAR: usar la mejor foto apaisada de oficina/equipo
+const HERO_IMG = '/Image/Abogados/Fotos/NICO 7 JUN CORP8054.webp' // CONFIRMAR: usar la mejor foto apaisada de oficina/equipo
 const WPP = 'https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta'
 
 export default function HeroSection() {
@@ -782,7 +782,7 @@ export default function QuienesSomosSection() {
 
           <Reveal delay={120} className="overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.jpg"
+              src="/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.webp"
               alt="Equipo de Calderón Galindo Abogados"
               className="h-full w-full object-cover grayscale transition duration-500 hover:grayscale-0"
             />
@@ -944,7 +944,7 @@ git commit -m "feat(home): sección Proceso (cómo trabajamos)"
         {/* Imagen panorámica */}
         <Reveal className="mb-12 overflow-hidden rounded-2xl shadow-xl" >
           <img
-            src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.jpg"
+            src="/Image/Abogados/Fotos/NICO 7 JUN CORP8006.webp"
             alt="Oficina de Calderón Galindo Abogados"
             className="h-[300px] w-full object-cover grayscale transition duration-500 hover:grayscale-0"
             style={{ objectPosition: 'center 30%' }}

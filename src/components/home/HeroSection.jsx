@@ -1,4 +1,4 @@
-const HERO_IMG = '/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.jpg' // foto del equipo (apaisada)
+const HERO_IMG = '/Image/Abogados/Fotos/1NICO 7 JUN CORP7988.webp' // foto del equipo (apaisada)
 const WPP = 'https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta'
 
 export default function HeroSection() {

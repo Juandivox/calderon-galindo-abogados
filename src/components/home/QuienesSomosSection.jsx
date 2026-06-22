@@ -24,7 +24,7 @@ export default function QuienesSomosSection() {
 
           <Reveal delay={120} className="overflow-hidden rounded-2xl shadow-xl">
             <img
-              src="/Image/Abogados/Fotos/NICO 7 JUN CORP8054.jpg"
+              src="/Image/Abogados/Fotos/NICO 7 JUN CORP8054.webp"
               alt="Abogado de Calderón Galindo Abogados"
               loading="lazy"
               className="aspect-[4/5] w-full object-cover grayscale transition duration-500 hover:grayscale-0"
