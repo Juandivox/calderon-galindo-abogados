@@ -52,10 +52,27 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-12 border-t border-blanco-puro/10 pt-6 text-center">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-blanco-puro/10 pt-6 sm:flex-row">
           <p className="font-cuerpo text-xs text-blanco-puro/50">
             © {new Date().getFullYear()} Calderón Galindo Abogados. Todos los derechos reservados.
           </p>
+          <a
+            href="https://miraylabs.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="group flex items-center gap-2 transition-all duration-300"
+          >
+            <span className="font-cuerpo text-[10px] uppercase tracking-widest text-blanco-puro/60 transition-colors duration-300 group-hover:text-blanco-puro">
+              Powered by
+            </span>
+            <img
+              src="/miraylabs-logo.webp"
+              alt="MirayLabs"
+              width={40}
+              height={40}
+              className="object-contain invert brightness-75 transition-all duration-300 group-hover:brightness-200"
+            />
+          </a>
         </div>
       </div>
     </footer>
