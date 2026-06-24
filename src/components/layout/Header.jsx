@@ -95,7 +95,7 @@ export default function Header() {
               </a>
             ))}
             <a
-              href="https://wa.me/573239326636"
+              href="https://wa.me/573182597072"
               target="_blank"
               rel="noopener noreferrer"
               className="font-cuerpo px-6 py-2.5 bg-verde-institucional text-negro-profundo rounded-lg font-medium hover:bg-opacity-90 hover:shadow-lg transition duration-300"
@@ -133,7 +133,7 @@ export default function Header() {
                 </a>
               ))}
               <a
-                href="https://wa.me/573239326636"
+                href="https://wa.me/573182597072"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="font-cuerpo py-2.5 px-4 bg-verde-institucional text-negro-profundo text-center rounded-lg hover:bg-opacity-90 transition duration-300"

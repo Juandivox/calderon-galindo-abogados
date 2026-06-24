@@ -27,8 +27,8 @@ export default function ContactSection() {
                   <Phone className="w-5 h-5 text-verde-profundo mr-3 mt-1 flex-shrink-0" />
                   <span>
                     WhatsApp:{' '}
-                    <a href="https://wa.me/573239326636" target="_blank" rel="noopener noreferrer" className="hover:underline">
-                      (+57) 323 9326636
+                    <a href="https://wa.me/573182597072" target="_blank" rel="noopener noreferrer" className="hover:underline">
+                      (+57) 318 2597072
                     </a>
                   </span>
                 </li>
@@ -74,7 +74,7 @@ export default function ContactSection() {
             Escríbanos por WhatsApp y le atenderemos lo antes posible.
           </p>
           <a
-            href="https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
+            href="https://wa.me/573182597072?text=Hola,%20me%20gustar%C3%ADa%20agendar%20una%20consulta"
             target="_blank"
             rel="noopener noreferrer"
             className="btn-primario mt-8"

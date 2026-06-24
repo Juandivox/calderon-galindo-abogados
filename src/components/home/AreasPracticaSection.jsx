@@ -4,7 +4,7 @@ import SectionHeader from '../ui/SectionHeader'
 import Reveal from '../ui/Reveal'
 import { practiceAreas } from '../../data/practiceAreas'
 
-const WPP = 'https://wa.me/573239326636?text=Hola,%20me%20gustar%C3%ADa%20una%20asesor%C3%ADa'
+const WPP = 'https://wa.me/573182597072?text=Hola,%20me%20gustar%C3%ADa%20una%20asesor%C3%ADa'
 
 function AreaCard({ Icon, title, teaser, paragraphs, index }) {
   const [open, setOpen] = useState(false)
