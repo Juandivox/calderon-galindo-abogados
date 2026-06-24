@@ -43,8 +43,8 @@ export default function Footer() {
             <p className="flex items-start gap-2 font-cuerpo text-sm text-blanco-puro/70">
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-verde-institucional" /> Hotel Tequendama, Cra 10 #26-21, piso 8, Bogotá
             </p>
-            <a href="https://wa.me/573239326636" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-cuerpo text-sm text-blanco-puro/70 transition hover:text-verde-institucional">
-              <Phone className="h-4 w-4 text-verde-institucional" /> (+57) 323 9326636
+            <a href="https://wa.me/573182597072" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 font-cuerpo text-sm text-blanco-puro/70 transition hover:text-verde-institucional">
+              <Phone className="h-4 w-4 text-verde-institucional" /> (+57) 318 2597072
             </a>
             <a href="mailto:contacto@calderongalindoabogados.com" className="flex items-center gap-2 font-cuerpo text-sm text-blanco-puro/70 transition hover:text-verde-institucional">
               <Mail className="h-4 w-4 text-verde-institucional" /> contacto@calderongalindoabogados.com
